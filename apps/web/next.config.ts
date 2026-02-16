@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  transpilePackages: ["@mlgraph/core", "@mlgraph/ui"],
 };
 
 export default nextConfig;
