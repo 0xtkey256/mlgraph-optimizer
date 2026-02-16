@@ -1,0 +1,24 @@
+model TransformerAttention {
+  input x: Tensor<float32>[1, 128, 512]
+
+  wq = Constant()
+  wk = Constant()
+  wv = Constant()
+
+  q = MatMul(x, wq)
+  k = MatMul(x, wk)
+  v = MatMul(x, wv)
+
+  kt = Transpose(k, perm=0,2,1)
+  scores = MatMul(q, kt)
+  attn = Softmax(scores)
+  context = MatMul(attn, v)
+
+  wo = Constant()
+  proj = MatMul(context, wo)
+  bo = Constant()
+  out = Add(proj, bo)
+  norm = LayerNorm(out)
+
+  output norm
+}

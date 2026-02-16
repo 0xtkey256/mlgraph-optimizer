@@ -1,0 +1,21 @@
+{
+  "name": "mlgraph-optimizer",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "clean": "turbo clean"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/three": "^0.182.0",
+    "turbo": "^2.4.0",
+    "typescript": "^5.7.0"
+  }
+}
