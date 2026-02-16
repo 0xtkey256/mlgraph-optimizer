@@ -1,0 +1,15 @@
+# Table of contents
+
+* [Introduction](README.md)
+* [Getting Started](getting-started.md)
+* [DSL Reference](dsl-reference.md)
+* [Optimization Passes](optimization-passes/README.md)
+  * [Shape Inference](optimization-passes/shape-inference.md)
+  * [Constant Folding](optimization-passes/constant-folding.md)
+  * [Dead Code Elimination](optimization-passes/dead-code-elimination.md)
+  * [Operator Fusion](optimization-passes/operator-fusion.md)
+  * [Memory Planning](optimization-passes/memory-planning.md)
+* [Graph IR](graph-ir.md)
+* [Examples](examples.md)
+* [Architecture](architecture.md)
+* [Roadmap](roadmap.md)
